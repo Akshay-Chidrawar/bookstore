@@ -1,0 +1,28 @@
+project:
+  name: "bookstore"
+  host: "https://dbc-134e30eb-a774.cloud.databricks.com/"
+  token: ""
+  root: "bookstoredatabricks"
+
+objects_tracker: "/Workspace/Users/akshay.chidrawar@ltimindtree.com/bookstore/schema/workspace_default_objects_tracker.yml"
+
+buckets:
+  - type: "rawdata"
+    name: "bookstorerawdata"
+    iam_role: "arn:aws:iam::302263052839:role/databricks-s3-ingest-3fcda-db_s3_iam"
+  - type: "databricks:"
+    name: "bookstoredatabricks"
+    iam_role: "arn:aws:iam::302263052839:role/databricks-s3-ingest-f00cb-db_s3_iam"
+
+dwh_structure:
+  catalogs:
+    - name: "ct_bookstore"
+      databases: 
+        - name: "db_bronze"
+        - name: "db_silver"
+        - name: "db_gold"
+
+table_schemas:
+  - name: "ct_bookstore_db_silver_tbl_books.yml"
+  - name: "ct_bookstore_db_silver_tbl_customers.yml"
+  - name: "ct_bookstore_db_silver_tbl_orders.yml"

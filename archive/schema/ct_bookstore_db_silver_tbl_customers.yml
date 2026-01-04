@@ -1,0 +1,31 @@
+#used in SCD Type1. Thus, contains different set of columns compared to bronze table. 
+catalog: "ct_bookstore"
+database: "db_silver"
+table: "tbl_customers"
+primary_key: []
+partition_by: []
+columns:
+  - name: customer_id
+    type: string
+    nullable: false
+  - name: email
+    type: string
+    nullable: true
+  - name: first_name
+    type: string
+    nullable: true
+  - name: last_name
+    type: string
+    nullable: true
+  - name: gender
+    type: string
+    nullable: true
+  - name: city
+    type: string
+    nullable: true
+  - name: country
+    type: string
+    nullable: true
+  - name: last_updated
+    type: timestamp
+    nullable: true
