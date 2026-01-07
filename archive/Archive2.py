@@ -87,7 +87,7 @@ parsed = df.select(
 display(parsed_df)
 
 import sys
-sys.path.append('/Workspace/Users/akshay.chidrawar@ltimindtree.com/bookstore/transformations')
+sys.path.append('/Workspace/Users/akshayuchidrawar@gmail.com/bookstore/transformations')
 from raw_to_bronze_input import schema_feeds,schema_books,schema_customers,schema_orders
 
 def drop_columns_from_schema(schema, columns_to_drop):
