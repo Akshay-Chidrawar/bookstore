@@ -1,12 +1,12 @@
 # Databricks notebook source
-# MAGIC %run /Workspace/Users/akshay.chidrawar@ltimindtree.com/bookstore/dependencies/Designer
+# MAGIC %run /Workspace/Users/akshayuchidrawar@gmail.com/bookstore/dependencies/Designer
 
 # COMMAND ----------
 
 bookstore = ProjectSetup(
     ProjectName='bookstore'
-    ,repository_file='/Workspace/Users/akshay.chidrawar@ltimindtree.com/bookstore/config/repository.yml'
-    ,metadata_file = '/Workspace/Users/akshay.chidrawar@ltimindtree.com/bookstore/config/metadata.yml'
+    ,repository_file='/Workspace/Users/akshayuchidrawar@gmail.com/bookstore/config/repository.yml'
+    ,metadata_file = '/Workspace/Users/akshayuchidrawar@gmail.com/bookstore/config/metadata.yml'
 )
 
 # COMMAND ----------

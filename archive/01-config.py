@@ -3,7 +3,7 @@
 
 # COMMAND ----------
 
-FileName_DWH = '/Workspace/Users/akshay.chidrawar@ltimindtree.com/PrashantPandey/DWH_details.xlsx'
+FileName_DWH = '/Workspace/Users/akshayuchidrawar@gmail.com/PrashantPandey/DWH_details.xlsx'
 
 Setup(FileName_DWH)
 
