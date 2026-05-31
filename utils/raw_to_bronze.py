@@ -24,7 +24,8 @@ def fn_get_feed():
                     ,path_=path_feeds
                     ,schema_=schema_feeds)
 
-@dp.table(name=tbl_bronze_feeds,table_properties={"delta.enableChangeDataFeed": "true"})
+@dp.table(name=tbl_bronze_feeds
+          ,table_properties={"delta.enableChangeDataFeed": "true"})
 def fn_write_feed():
     return spark.readStream.table('vw_feed')
 #----------------------------------------------------------------------------------------------

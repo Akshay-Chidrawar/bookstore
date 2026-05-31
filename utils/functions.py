@@ -24,7 +24,7 @@ def raw_feed(spark,path_,schema_,lakeflow=1):
             .format('json')
             .option('recursiveFileLookup','false')
             .schema(schema_)
-            .mergeSchema(True)
+            .option('mergeSchema', 'true')            
             .load(path_)
         )
     else:
